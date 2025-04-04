@@ -12,6 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <CssBaseline/>
     <div onContextMenu={(e)=>e.preventDefault()}>
       <App />
+      
     </div>
     </HelmetProvider>
     </Provider>
