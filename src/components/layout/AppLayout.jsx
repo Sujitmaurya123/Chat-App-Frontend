@@ -135,11 +135,11 @@ const AppLayout = () =>(WrappedComponent)=> {
 
                  {/* Third part of home chats */}
 
-  <Grid  item md={4} lg={3} height={"100%"}
+  <Grid  item md={4} lg={3} height={"100vh"}
     sx={{
         display:{xs:"none",sm:"block"},
         padding:"2rem",
-        bgcolor:"rgba(0,0,0,0.85)"
+        bgcolor:"#284E9F"
     }}
   >     <Profile  user={user} />
   

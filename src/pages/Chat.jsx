@@ -165,7 +165,7 @@ const Chat = ({chatId,user}) => {
       boxSizing={"border-box"}
       padding={"1rem"}
       spacing={"1rem"}
-      bgcolor={grayColor}
+      className="bg-[url('/image/chimg2.jpg')] bg-cover  "
       height={"90%"}
       sx={{
         overflow:"hidden",

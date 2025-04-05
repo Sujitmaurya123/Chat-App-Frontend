@@ -5,7 +5,7 @@ import {CameraAlt as CameraAltIcon} from "@mui/icons-material"
 import { VisuallyHiddenInput } from '../components/styles/StyledComponents';
 import{useFileHandler, useInputValidation} from '6pp'
 import { usernameValidator } from '../utils/validators';
-import { bgGradient } from '../constants/color';
+import {  bgGradient } from '../constants/color';
 import axios from 'axios';
 import { server } from '../constants/config';
 import { useDispatch } from 'react-redux';
@@ -88,13 +88,12 @@ const Login = () => {
 
   return (
     <div
-    style={{
-        backgroundImage:bgGradient,
-    }}
+    class="bg-[url('/image/chatbgimg.avif')] bg-cover bg-center "
     >
 
    
     <Container component={"main"} maxWidth="xs"
+   
     sx={{
         height:"100vh",
         display:"flex",
@@ -108,10 +107,11 @@ const Login = () => {
             flexDirection:"column",
             alignItems:"center",
         }}  
+         
         >
 {
     isLogin?(<>
-        <Typography variant='h5'>Login</Typography>
+        <Typography variant='h3' className='text-[#222648]'>Login</Typography>
         <form style={{
             width:"100%",
             margin:'1rem',
@@ -143,6 +143,7 @@ const Login = () => {
         sx={{
             margin:"1rem",
         }}
+       
         fullWidth
         variant='contained'
         color='primary'
@@ -166,7 +167,7 @@ const Login = () => {
 
     ):(
     <>
-        <Typography variant='h5'>Sign Up</Typography>
+        <Typography variant='h3' className='text-[#222648]'>Sign Up</Typography>
         <form style={{
             width:"100%",
             margin:'1rem',

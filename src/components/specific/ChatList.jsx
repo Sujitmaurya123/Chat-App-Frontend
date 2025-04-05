@@ -1,7 +1,7 @@
 import React from 'react'
 import { Stack } from '@mui/material'
 import ChatItem from '../shared/ChatItem'
-import { bgGradient } from '../../constants/color'
+import { bgGradient, whiteLight } from '../../constants/color'
 const ChatList = ( {
   w="100%",
     chats=[],
@@ -15,9 +15,9 @@ const ChatList = ( {
     handleDeleteChat,
      }) => {
   return( <Stack  width={w} direction={"column"}
-  overflow={"auto"} height={"100%"} sx={{
-    backgroundImage:bgGradient,
-  }}
+  overflow={"auto"} height={"100%"} className="bg-[url('/image/chatbgimg.avif')] bg-cover bg-center"
+ 
+  
   >
     {
         chats?.map((data,index)=>{
