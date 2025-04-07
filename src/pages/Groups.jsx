@@ -350,10 +350,10 @@ const Groups = () => {
 
 const GroupsList =({w="100%",myGroups=[],chatId})=>(
 
-<Stack
+<Stack className="bg-[url('/image/chatbgimg.avif')] bg-cover bg-center "
   width={w}
   sx={{
-  backgroundImage:bgGradient,
+  
   height:"100vh",
 }}>
   
@@ -361,7 +361,7 @@ const GroupsList =({w="100%",myGroups=[],chatId})=>(
       myGroups.length>0?(
         myGroups.map((group)=> <GroupsListItem group={group} chatId={chatId} key={group._id} /> )
       ):(
-        <Typography textAlign={'center'} padding="1rem">
+        <Typography textAlign={'center'} variant='h3' padding="1rem">
           No group
         </Typography>
       )

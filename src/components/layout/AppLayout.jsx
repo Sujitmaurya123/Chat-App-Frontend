@@ -107,7 +107,7 @@ const AppLayout = () =>(WrappedComponent)=> {
 
       {/* first part of home chats */}
 
-        <Grid  item  height={"100%"} 
+        <Grid  item  height={"100vh"} 
         sm={4}
         md={3}
         sx={{
@@ -128,7 +128,7 @@ const AppLayout = () =>(WrappedComponent)=> {
 
          {/* Second part of home chats */}
 
-          <Grid  item xs={12} sm={8} md={5} lg={6} height={"100%"} >
+          <Grid  item xs={12} sm={8} md={5} lg={6} height={"100vh"} >
 
       <WrappedComponent {...props} chatId={chatId}  user={user}  />
           </Grid>

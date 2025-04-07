@@ -1,7 +1,7 @@
 
 export const orangeLight = "rgba(234, 112, 112,0.2)";
 export const orange ="#222648";
-export const grayColor = "#5B98F4";
+export const grayColor = "#ffffff";
 
 export const lightBlue="Black"
 

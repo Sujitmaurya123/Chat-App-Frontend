@@ -54,7 +54,7 @@ const Sidebar=({w='100%'})=>{
         direction={"column"} p={"3rem"} spacing={"3rem"}
     >
         <Typography  variant='h5' textTransform={'uppercase'} >
-            Chattu
+            ChatApp
         </Typography>
 
         <Stack spacing={"1rem"} >
